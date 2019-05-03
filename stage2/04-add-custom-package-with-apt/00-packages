@@ -22,3 +22,7 @@ libsrtp2-1
 libsrtp2-dev
 libwebsockets-dev
 nginx
+wiringpi
+libboost-python-dev
+python3-gst-1.0
+python3-websockets

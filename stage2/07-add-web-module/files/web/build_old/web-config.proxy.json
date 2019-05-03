@@ -1,0 +1,4 @@
+{
+    "janus": "wss://pi-gf.hldns.ru:8989/janus/web/pi/MAGIC",
+    "joystick": "wss://pi-gf.hldns.ru:8989/joystick/web/pi/MAGIC"
+}

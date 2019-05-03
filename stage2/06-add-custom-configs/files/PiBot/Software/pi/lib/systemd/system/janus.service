@@ -1,0 +1,14 @@
+[Unit]
+Description=Janus WebRTC Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/janus/bin/janus -o
+Restart=on-failure
+RestartSec=15s
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,4 @@
+{
+    "janus": "wss://pi-robot.local:8989",
+    "joystick": "wss://pi-robot.local:8766"
+}

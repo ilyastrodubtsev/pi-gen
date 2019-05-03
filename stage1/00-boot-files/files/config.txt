@@ -43,14 +43,17 @@
 #arm_freq=800
 
 # Uncomment some or all of these to enable the optional hardware interfaces
-#dtparam=i2c_arm=on
+dtparam=i2c_arm=on
 #dtparam=i2s=on
-#dtparam=spi=on
+dtparam=spi=off
 
 # Uncomment this to enable the lirc-rpi module
 #dtoverlay=lirc-rpi
 
 # Additional overlays and parameters are documented /boot/overlays/README
-
+start_x=1
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=on
+#dtoverlay=w1-gpio
+gpu_mem=128
+enable_uart=0
