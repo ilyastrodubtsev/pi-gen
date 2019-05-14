@@ -1,0 +1,13 @@
+[Unit]
+Description=Checking for internet connection
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/PiBot/Software/pi/check_internet.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
+

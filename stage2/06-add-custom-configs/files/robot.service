@@ -1,5 +1,5 @@
 [Unit]
-Description=Wifi connect script
+Description=PiBot script
 After=network.target
 
 [Service]
