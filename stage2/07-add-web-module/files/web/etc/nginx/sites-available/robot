@@ -1,8 +1,8 @@
 server {
         listen 443 ssl default_server;
         listen [::]:443 ssl default_server;
-        ssl_certificate /home/pi/web/mykeys/pirobot.crt;
-        ssl_certificate_key /home/pi/web/mykeys/pirobot.key;
+        ssl_certificate /home/pi/PiBot/Software/pi/ssl/ssl.crt;
+        ssl_certificate_key /home/pi/PiBot/Software/pi/ssl/ssl.key;
 
         root /home/pi/web/build;
 
