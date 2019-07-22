@@ -1,0 +1,14 @@
+[Unit]
+Description=Avahi service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/PiBot/Software/pi/avahi.py
+Restart=on-failure
+RestartSec=15s
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
+
