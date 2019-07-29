@@ -26,3 +26,4 @@ wiringpi
 libboost-python-dev
 python3-gst-1.0
 python3-websockets
+python3-zeroconf
