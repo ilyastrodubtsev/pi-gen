@@ -46,6 +46,7 @@
 dtparam=i2c_arm=on
 #dtparam=i2s=on
 dtparam=spi=off
+dtparam=i2c1=on
 
 # Uncomment this to enable the lirc-rpi module
 #dtoverlay=lirc-rpi
@@ -57,3 +58,4 @@ dtparam=audio=on
 #dtoverlay=w1-gpio
 gpu_mem=128
 enable_uart=0
+dtoverlay=rpi-proto
