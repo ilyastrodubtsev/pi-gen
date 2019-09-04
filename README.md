@@ -27,3 +27,5 @@ All changes affected the stage2, the following folders were added:
     Contains all autoload configs and modified Janus configs
 * 07-add-web-module:
     Contains the collected site, and nginx configs
+* 08-wifi:
+	Installing the NetworkManager, and some network packages via pip
