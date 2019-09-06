@@ -19,7 +19,7 @@ class RobotCamera(object):
 
     CAPS = 'video/x-h264, width={width}, height={height}, framerate=(fraction)30/1, profile=(string)baseline'
     PIPELINE = '''
-      v4l2src blocksize=400000  device=/dev/video0 extra-controls="c,rotate=180" !
+      v4l2src blocksize=400000  device=/dev/video0 extra-controls="c,rotate=0" !
         {CAPS} !
         queue leaky=2 !
         h264parse !

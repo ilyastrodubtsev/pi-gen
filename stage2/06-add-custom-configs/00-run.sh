@@ -6,6 +6,7 @@ cp files/robot.service ${ROOTFS_DIR}/lib/systemd/system/
 cp files/check_internet.service ${ROOTFS_DIR}/lib/systemd/system/
 cp files/avahi-pibot.service ${ROOTFS_DIR}/lib/systemd/system/
 sh -c "echo "bcm2835-v4l2" >> ${ROOTFS_DIR}/etc/modules"
+sed -i "19a\rm -R /etc/NetworkManager/system-connections/MyAccessPoint*" ${ROOTFS_DIR}/etc/rc.local
 sed -i "19a\amixer -c 1 cset name='Input Mux', 'Mic'" ${ROOTFS_DIR}/etc/rc.local
 sed -i "19a\amixer -c 1 sset Mic Capture cap" ${ROOTFS_DIR}/etc/rc.local
 sed -i '$ai2c-dev' ${ROOTFS_DIR}/etc/modules
