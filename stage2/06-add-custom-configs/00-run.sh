@@ -15,5 +15,5 @@ ln -sv -f /lib/systemd/system/janus.service /etc/systemd/system/multi-user.targe
 ln -sv -f /lib/systemd/system/wifi-connect.service /etc/systemd/system/multi-user.target.wants/wifi-connect.service
 ln -sv -f /lib/systemd/system/robot.service /etc/systemd/system/multi-user.target.wants/robot.service
 ln -sv -f /lib/systemd/system/check_internet.service /etc/systemd/system/multi-user.target.wants/check_internet.service
-ln -sv -f /lib/systemd/system/avahi_pibot.service /etc/systemd/system/multi-user.target.wants/avahi-pibot.service
+ln -sv -f /lib/systemd/system/avahi-pibot.service /etc/systemd/system/multi-user.target.wants/avahi-pibot.service
 EOF
