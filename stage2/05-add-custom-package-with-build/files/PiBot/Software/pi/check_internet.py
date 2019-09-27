@@ -73,7 +73,7 @@ def checkWlan0Ip():
     config = readJson(PASS_TO_IP_CONFIG)
     m = os.popen('ifconfig wlan0 | grep "inet " | cut -c 14-27')
     currentIp = m.read()
-    if config['ip'] == currentIp:
+    if config['ip'] == currentIp.rstrip():
         return True
     else:
         return False
